@@ -5,7 +5,7 @@
 
 ## 📌 Project Overview
 
-**OfferBazaar** is a Java-based web application that connects **local vendors** with **city-based users** looking for great deals. Vendors can register, login, and publish promotional offers. Users can explore and filter these offers based on their city. The platform includes an **Admin Panel** for managing vendors, users, and published offers.
+**OfferBazaar** is a Java-based web application that connects **local advertisers** with **city-based users** looking for great deals. Advertisers can register, login, and publish promotional offers. Users can explore and filter these offers based on their city. The platform includes an **Admin Panel** for managing advertisers, users, and published offers.
 
 ---
 
@@ -21,10 +21,10 @@
 
 ## 🔑 Key Features
 
-### 👤 Vendor Module
+### 📢 Advertiser Module
 - Register and login securely
-- Add, update, and delete offers
-- View a list of submitted offers
+- Add, update, and delete promotional offers
+- View and manage submitted offers
 
 ### 👥 User Module
 - Browse all available offers
@@ -32,25 +32,11 @@
 - View detailed offer information (discount, description, expiry date)
 
 ### 🛠️ Admin Module
-- Approve or reject vendor registrations
-- Manage vendor and user accounts
-- Monitor, edit, or remove offers
+- Approve or reject advertiser registrations
+- Manage advertiser and user accounts
+- Monitor, edit, or remove posted offers
 
 ---
 
 ## 📂 Project Structure
 
-OfferBazaar/
-│
-├── src/
-│ ├── controller/ # Java Servlets (AdminController, VendorController, etc.)
-│ ├── dao/ # JDBC Database access (UserDao, OfferDao, etc.)
-│ └── model/ # JavaBeans for User, Vendor, Offer, etc.
-│
-├── WebContent/
-│ ├── jsp/ # All JSP pages (login.jsp, viewOffers.jsp, etc.)
-│ ├── css/ # Stylesheets
-│ ├── images/ # Static assets
-│ └── WEB-INF/ # web.xml configuration
-│
-└── README.md
