@@ -1,0 +1,651 @@
+/* ==================== General Body Styling ==================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* ==================== Top Navbar ==================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .left {
+  font-size: 22px;
+  font-weight: bold;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .left i {
+  margin-right: 8px;
+}
+
+.navbar .right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .right a:hover {
+  color: #10b981;
+}
+
+.navbar .right i {
+  margin-right: 6px;
+}
+
+/* ==================== Dashboard Layout ==================== */
+.dashboard {
+  display: flex;
+  min-height: calc(100vh - 60px);
+}
+
+/* ==================== Sidebar ==================== */
+.sidebar {
+  width: 240px;
+  background-color: #1f2937;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f9fafb;
+  font-weight: 600;
+  padding: 12px 18px;
+  background-color: #10b981;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #059669;
+}
+
+.sidebar a.active {
+  background-color: #059669;
+  box-shadow: 0 0 10px #10b981;
+}
+
+
+/* ==================== Main Content ==================== */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+   margin-left: 15px; 
+}
+
+.main-content h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.main-content p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* ==================== Filter Section ==================== */
+.filter-card {
+  margin-bottom: 35px; /* Increased from 30px to 35px for more space below filter */
+}
+
+
+/* ==================== Table Styling ==================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin-top: 20px;
+}
+
+table thead {
+  background-color: #f9fafb;
+}
+
+table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+
+table td {
+  padding: 14px 16px;
+  background-color: #ffffff;
+  color: #1f2937;
+  font-size: 15px;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+table tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+table tbody tr:hover td {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== Buttons ==================== */
+button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #059669;
+}
+
+.unapprove-btn {
+  background-color: #ef4444;
+}
+
+.unapprove-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ==================== Messages ==================== */
+.logout-message {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px 20px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+/* ==================== Form Styling ==================== */
+.form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-box label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.form-box input[type="password"] {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 15px;
+}
+
+/* ==================== Advertiser Dashboard ==================== */
+.advertiser-dashboard .main-content {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.advertiser-dashboard form {
+  max-width: 720px;
+  width: 100%;
+}
+
+.advertiser-dashboard form input,
+.advertiser-dashboard form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.advertiser-dashboard .sidebar a,
+.advertiser-dashboard .sidebar button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background-color: #10b981;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.advertiser-dashboard .sidebar a:hover,
+.advertiser-dashboard .sidebar button:hover {
+  background-color: #0f9770;
+}
+
+.advertiser-dashboard .sidebar a.active {
+  background-color: #059669;
+  box-shadow: 0 0 10px #10b981;
+}
+
+/* ==================== Change Password Page ==================== */
+.change-password-wrapper {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.change-password-wrapper h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #111827;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.change-password-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.change-password-wrapper label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.change-password-wrapper input[type="password"] {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f9fafb;
+}
+
+.change-password-wrapper button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-password-wrapper button:hover {
+  background-color: #059669;
+}
+
+/* ==================== User Dashboard Enhancements ==================== */
+.filter-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  align-items: end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+}
+
+.filter-group input {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.filter-group input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  outline: none;
+}
+
+.filter-button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: fit-content;
+}
+
+.filter-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  border-color: #10b981;
+}
+
+.offer-badge {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: #3b82f6; /* Changed from red to blue */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.offer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.offer-merchant {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.offer-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.offer-dates {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6b7280;
+  margin: 5px 0;
+}
+
+.offer-dates span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.offer-description {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.offer-actions {
+  margin-top: 15px;
+}
+
+.view-more-btn {
+  width: 100%;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.view-more-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+.no-offers {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.no-offers i {
+  font-size: 40px;
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.no-offers h3 {
+  color: #111827;
+  margin: 10px 0 5px;
+}
+
+.no-offers p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ==================== Responsive Adjustments ==================== */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    gap: 10%;
+  }
+  
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .sidebar a {
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
+  
+  .main-content {
+    border-top-left-radius: 0;
+    padding: 20px;
+  }
+  
+  .filter-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+.offer-detail-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.offer-detail-card {
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+
+.offer-title {
+	font-size: 24px;
+	color: #111827;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #e5e7eb;
+	padding-bottom: 15px;
+}
+
+.offer-field {
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.offer-label {
+	font-weight: 600;
+	color: #374151;
+	width: 150px;
+}
+
+.offer-value {
+	color: #4b5563;
+	flex: 1;
+}
+
+.back-button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: #10b981;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+.back-button:hover {
+	background: #059669;
+}
+
+.discount-badge {
+	background: #3b82f6;
+	color: white;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.no-offer, .error {
+	text-align: center;
+	padding: 20px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	color: #111827;
+}
