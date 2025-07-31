@@ -40,3 +40,19 @@
 
 ## 📂 Project Structure
 
+```text
+OfferBazaar/
+│
+├── src/
+│   ├── controller/           # Java Servlets (AdminController, AdvertiserController, etc.)
+│   ├── dao/                  # JDBC Database access (UserDao, OfferDao, etc.)
+│   └── model/                # JavaBeans for User, Advertiser, Offer, etc.
+│
+├── WebContent/
+│   ├── jsp/                  # JSP Pages (login.jsp, viewOffers.jsp, postOffer.jsp, etc.)
+│   ├── css/                  # Stylesheets
+│   ├── images/               # Static assets (logos, icons, banners)
+│   └── WEB-INF/              # web.xml configuration and deployment descriptor
+│
+└── README.md                 # Project documentation
+
