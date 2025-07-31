@@ -40,19 +40,39 @@
 
 ## 📂 Project Structure
 
+
 ```text
 OfferBazaar/
 │
 ├── src/
-│   ├── controller/           # Java Servlets (AdminController, AdvertiserController, etc.)
-│   ├── dao/                  # JDBC Database access (UserDao, OfferDao, etc.)
-│   └── model/                # JavaBeans for User, Advertiser, Offer, etc.
+│   └── controller/            # All Java Servlets (Admin, Advertiser, User controllers)
 │
 ├── WebContent/
-│   ├── jsp/                  # JSP Pages (login.jsp, viewOffers.jsp, postOffer.jsp, etc.)
-│   ├── css/                  # Stylesheets
-│   ├── images/               # Static assets (logos, icons, banners)
-│   └── WEB-INF/              # web.xml configuration and deployment descriptor
+│   ├── jsp/                   # JSP Pages (login.jsp, viewOffers.jsp, postOffer.jsp, etc.)
+│   ├── css/                   # CSS Stylesheets
+│   └── WEB-INF/               # web.xml configuration
 │
-└── README.md                 # Project documentation
+└── README.md                  # Project documentation
+
+
+🧭 Project Flow
+
+                             ┌────────────────────┐
+                             │     Home Page      │
+                             └────────┬───────────┘
+                                      │
+             ┌────────────────────────┼────────────────────────┐
+             │                        │                        │
+     ┌───────▼───────┐        ┌───────▼────────┐       ┌───────▼───────┐
+     │   User Login  │        │ Advertiser Login│       │   Admin Login │
+     └───────┬───────┘        └────────┬────────┘       └───────┬───────┘
+             │                         │                        │
+     ┌───────▼─────────┐      ┌────────▼────────┐       ┌───────▼──────────┐
+     │ View Offers     │      │ Post/Edit Offer │       │ Manage Users     │
+     │ Filter by City  │      │ View Own Offers │       │ Manage Offers    │
+     │ View Offer Info │      └─────────────────┘       │ Approve Ads      │
+     └─────────────────┘                                └──────────────────┘
+
+
+
 
