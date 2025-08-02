@@ -71,7 +71,7 @@ public class AdvertiserLoginServlet extends HttpServlet {
 
 			} else {
 				System.out.println("Advertiser login failed");
-				response.sendRedirect("error.jsp");
+				response.sendRedirect("authenticationError.jsp");
 			}
 
 		} catch (Exception e) {
@@ -83,3 +83,4 @@ public class AdvertiserLoginServlet extends HttpServlet {
 	}
 
 }
+
